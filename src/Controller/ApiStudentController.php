@@ -13,14 +13,21 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\Encoder\JsonEncode;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
+use App\Service;
+use App\Service\ApiKeyService;
 
 class ApiStudentController extends AbstractController
 {   
     /**
      * @Route("/api/student", name="app_api_student", methods={"GET"})
      */
-    public function index(StudentRepository $studentRepository, NormalizerInterface $normalizer ): JsonResponse
+    public function index(StudentRepository $studentRepository, NormalizerInterface $normalizer, ApiKeyService $apiKeyService, Request $request ): JsonResponse
     {
+
+        $authorized = $apiKeyService->checkApiKey($request);
+       
+
+        dd($authorized);
 
         $students=$studentRepository->findALL();
 
