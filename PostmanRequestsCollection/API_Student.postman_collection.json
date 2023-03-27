@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "eb2b24f0-78e5-47a8-97b5-19fc4f225455",
+		"name": "API_Student",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "172.24.195.48/API_Stage_Etudiant/public/api/internship",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idStudent\":\"1\",\r\n    \"idCompany\":\"1\",\r\n    \"startDate\":\"2023-03-15\",\r\n    \"endDate\": \"2023-06-15\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.16.200.18/API_Stage_Etudiant/public/api/internship",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"200",
+						"18"
+					],
+					"path": [
+						"API_Stage_Etudiant",
+						"public",
+						"api",
+						"internship"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "172.24.195.48/API_Stage_Etudiant/public/api/internship",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "API-KEY",
+						"value": "Test",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idStudent\":\"1\",\r\n    \"idCompany\":\"1\",\r\n    \"startDate\":\"2023-03-15\",\r\n    \"endDate\": \"2023-06-15\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.16.200.18/API_Stage_Etudiant/public/api/student",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"200",
+						"18"
+					],
+					"path": [
+						"API_Stage_Etudiant",
+						"public",
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "172.24.195.48/API_Stage_Etudiant/public/api/internship",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idStudent\":\"1\",\r\n    \"idCompany\":\"1\",\r\n    \"startDate\":\"2023-03-15\",\r\n    \"endDate\": \"2023-06-15\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.16.200.18/API_Stage_Etudiant/public/api/company",
+					"protocol": "http",
+					"host": [
+						"172",
+						"16",
+						"200",
+						"18"
+					],
+					"path": [
+						"API_Stage_Etudiant",
+						"public",
+						"api",
+						"company"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "evmxs0ojiualKMQBtKdvyCAyXVOGlJd7880icfaIZ1",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "API-KEY",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
