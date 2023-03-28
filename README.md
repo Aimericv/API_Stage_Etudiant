@@ -22,7 +22,7 @@ Pour la base de données :
 
 composer require doctrine/annotations
 
-composer require orm
+composer require orm	
 
 composer require symfony/serializer-pack
 
